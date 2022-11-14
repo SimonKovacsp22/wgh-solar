@@ -1,0 +1,13 @@
+:root {
+    --sk-color:rgb(117, 211, 243);
+    --sk-size:100px;
+}
+
+.loader_container {
+    width: 100%;
+    height: 100vh;
+    margin-top: -105px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

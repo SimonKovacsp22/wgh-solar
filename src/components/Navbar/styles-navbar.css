@@ -1,0 +1,191 @@
+
+
+.navbar_container {
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 1px 2px 0 rgb(35 57 66 / 21%);
+    z-index: 100; 
+
+}
+.navbar_logo_container {
+    width: 235px;
+    height: 75px;
+    font-family: 'Roboto Condensed', sans-serif;
+    background-image: url('../../assets/WGHSolarLogo.png');
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: 500px;
+    background-position-x: -124px;
+    background-position-y:  225px ;
+
+}
+
+.navbar_logo_container h3 {
+    margin: 0
+}
+.navbar_logo_container p {
+    margin: 0;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-top: -10px;
+    margin-left: 56px;
+}
+
+
+.navbar_buttons_container {
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
+
+}
+
+.navbar_buttons_container button {
+    position: relative;
+    background-color: transparent;
+    font-size: 1.2rem;
+    color: #404046;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 16px;
+}
+.navbar_contact_info {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+}
+.navbar_contact_info p {
+   margin: 0;
+   font-family: 'Roboto';
+   margin-bottom: 5px;
+}
+
+ .navbar_buttons_container button:before {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 6px;
+    bottom: 10px;
+    left: 0;
+    background-color: transparent;
+    transition: width 250ms ease-out,background-color 250ms ease-in;
+
+    
+}
+
+.active button:before {
+    width: 100%;
+    background-color: var(--wgh-color)
+
+}
+
+.active button {
+    color: var(--wgh-color);
+}
+
+.navbar_buttons_container button:hover:before{
+    width: 100%;
+    background-color: var(--wgh-color);
+}
+
+.navbar_buttons_container button:hover {
+    color: var(--wgh-color);
+    cursor: pointer;
+}
+
+.navbar_content {
+    display: flex;
+    justify-content: space-between;
+    margin-inline: auto;
+    max-width: 1350px;
+}
+
+.navbar_menu_icon {
+    display: none !important;
+    font-size: 1px !important;
+}
+
+.call_to_action_button {
+    font-size: 16px;
+    color: #404046;
+    background-color: var(--wgh-orange);
+    align-self: center;
+    border: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 44px;
+    padding-inline: 1rem;
+    letter-spacing: .5px;
+    transition: background-color 250ms ease-out;
+    display: flex;
+    align-items: center;
+
+}
+
+.call_to_action_button:hover {
+    background-color: rgb(51, 51, 51);
+    cursor: pointer;
+    color: rgb(227, 227, 227)
+}
+
+.call_to_action_button:active {
+    background-color:rgba(51, 51, 51,.7) ;
+}
+@media (max-width:1550px) {
+    .navbar_content {
+         column-gap:unset;
+         justify-content: space-between;
+         margin-inline:100px;
+
+    }
+}
+
+@media (max-width:1450px) {
+    .navbar_content {
+         column-gap:unset;
+         justify-content: space-between;
+         margin-inline:50px;
+
+    }
+}
+
+@media(max-width:1200px) {
+    .navbar_content {
+        padding-block: .7rem;
+    }
+}
+
+
+
+@media (max-width:900px) {
+    .navbar_menu_icon{
+       display: block !important;
+    }
+    .navbar_buttons_container button:before {
+        bottom: 0;
+        height: 3px;
+    }
+
+    
+}
+
+@media(max-width:450px) {
+    .navbar_content {
+        margin-inline: 1rem;
+    }
+}
+
+@media(max-width:300px) {
+    .call_to_action_button {
+        display: none;
+    }
+}
+
+

@@ -1,0 +1,195 @@
+.realizations_container {
+  max-width: 1350px;
+  margin-inline: auto;
+  margin-bottom: 3rem;
+}
+
+.realization {
+    width: 600px;
+    height: 802px;
+    background-size: cover;
+}
+
+.single_realization_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.realization_paragraph {
+    position: relative;
+    color: #404046;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.realization_paragraph h1 {
+    z-index: 1;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.realization_paragraph p {
+    z-index: 1;
+    color: #6e6e6e;
+    font-size: 1.5rem;
+}
+
+.realization_paragraph h5 {
+    z-index: 1;
+    margin-top: 1rem;
+    color: var(--wgh-orange);
+    font-weight: 600;
+    font-size: 2.8rem;
+}
+
+
+
+.realization_paragraph_before::before {
+    filter: brightness(90%);
+    top: 460px;
+    right: 10px;
+    content: '';
+    width: 500px;
+    height: 600px;
+    position: absolute;
+    background-image: url('../../assets/solar-panel-no-bg-fococlipping-HD.png');
+    background-size: cover;
+    z-index: 0;
+}
+
+.realization_paragraph_before_2::before {
+    filter: brightness(90%);
+    top: -157px;
+    right: -100px;
+    content: '';
+    width: 600px;
+    background-position-x:-150px;
+    height: 500px;
+    position: absolute;
+    background-image: url('../../assets/solar-panel2-no-bg-fococlipping-HD.png');
+    background-size: cover;
+    z-index: 0;
+    transform: scaleX(-1);
+}
+
+
+
+
+.bg1 {
+    background-image: url('../../assets//1.jpg');
+}
+
+.bg2 {
+    background-image: url('../../assets//23.jpg');
+}
+
+.bg4 {
+    background-image: url('../../assets//17.jpg');
+    transform: scaleX(-1);
+}
+
+.bg3 {
+    background-image: url('../../assets//19.jpg');
+}
+
+
+@media (max-width:1550px) {
+    .realizations_container {
+         margin-inline:100px;
+
+    }
+}
+
+
+@media (max-width:1450px) {
+    .realizations_container {
+         margin-inline:50px;
+
+    }
+}
+
+@media (max-width:1250px) {
+    .single_realization_container {
+        flex-direction: column;
+        row-gap: 2rem;
+        margin-top:3rem !important ;
+       
+    }
+    .single_realization_container:nth-of-type(0) {
+        margin-top:1rem !important ;
+    }
+    .realization {
+        width: unset;
+        height: 1000px;
+    }
+    .realization_paragraph {
+        max-width: unset;
+    }
+    .reverse {
+        flex-direction: column-reverse;
+    }
+    .realization_paragraph_before::before,
+.realization_paragraph_before_2::before {
+    display: none;
+    }
+    .realization_paragraph h5 {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width:900px) {
+    .realization {
+        height: 800px;
+    }
+    .realization_paragraph h1 {
+        
+        margin-top: 0rem;
+    }
+    .realization_paragraph h5 {
+        
+        margin-bottom: 0rem;
+    }
+}
+
+
+@media (max-width:600px) {
+    .realization {
+        height: 600px;
+    }
+}
+
+@media (max-width:450px) {
+    .realizations_container   {
+        margin-inline: 1rem
+    }
+    .realization_paragraph h1 {
+        font-size: 50px;
+        font-weight: 400;
+        margin-bottom: 1rem;
+    }
+    .realization_paragraph p {
+        margin-bottom: 0;
+        font-size: 1rem;
+    }
+    .realization_paragraph h5 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width:350px) {
+    .realizations_container   {
+        margin-inline: 0
+    }
+    .realization_paragraph {
+        margin-inline: 1rem;
+    }
+   
+}
+
+
+
+
+

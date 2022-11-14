@@ -1,0 +1,30 @@
+* {
+  font-family: 'Prompt','Roboto',sans-serif;
+  box-sizing: border-box;
+}
+
+:root {
+  --wgh-color:#3ca7b5;
+  --wgh-orange:#F7AE17;
+}
+.root {
+  padding-top: 105px;
+  background-color: #F7F9F9;
+}
+
+.my-relative {
+  position: relative;
+}
+
+.z-2 {
+  z-index: 2;
+}
+
+.mr-3 {
+  margin-right: 3rem;
+  
+}
+
+.mt-10 {
+  margin-top: 10rem;
+}
