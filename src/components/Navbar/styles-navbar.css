@@ -59,8 +59,8 @@
     position: absolute;
     content: '';
     width: 0;
-    height: 6px;
-    bottom: 10px;
+    height: 4px;
+    bottom: 0px;
     left: 0;
     background-color: transparent;
     transition: width 250ms ease-out,background-color 250ms ease-in;

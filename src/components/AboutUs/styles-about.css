@@ -103,7 +103,7 @@
     }
  } 
 
- /* @media(max-width:1536px) {
+ @media(max-width:1536px) {
     .aboutUs_container {
         margin-inline: 100px;
     }
@@ -113,7 +113,7 @@
     .aboutUs_container {
         margin-inline: 50px;
     }
- } */
+ }
 
  @media(max-width:1200px) {
     .aboutUs_container {
@@ -136,3 +136,32 @@
         margin-bottom: 1rem;
     }
  }
+
+ @media(max-width:500px) {
+
+    .aboutUs_img_shadow {
+        display: none;
+    }
+    .aboutUs_img_crew {
+        display: none;
+    }
+
+    .aboutUs_img_crew_container {
+        background-image: url("../../assets/pexels-los-muertos-crew-8853507.jpg");
+        background-size: cover;
+        width: 100%;
+        transform: none;
+    }
+    .aboutUs_animaiton {
+        animation: none;
+    }
+    .aboutUs_paragraph_right {
+        margin-top: 2rem;
+    }
+    }
+
+    @media(max-width:450px) {
+        .aboutUs_container {
+            margin-inline: 1rem;
+        }
+    }
