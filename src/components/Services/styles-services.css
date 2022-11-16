@@ -73,3 +73,15 @@
          margin-inline:50px;
     }
 }
+
+@media (max-width:400px) {
+    .services_container {
+         margin-inline:16px;
+    }
+}
+
+@media (max-width:300px) {
+    .services_container {
+         margin-inline:0
+    }
+}

@@ -1,11 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import pic from "../../assets/pexels-los-muertos-crew-8853507.jpg";
 import "./styles-about.css";
 import {Footer} from '../index'
 
+
+
 const AboutUs = () => {
+  const [scroll, setScroll] = useState(false)
+
+  const addAnimation = () => {
+    if (window.scrollY >= 200) {
+      setScroll(true);
+    } else {
+      setScroll(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('scroll', addAnimation);
+
+    return window.removeEventListener('scroll', addAnimation);
+  }, []);
   return (
-    <>
+    
       <div className="aboutUs_container">
         <div className="aboutUs_paragraph_left">
           <span className="abooutUs_highlight"></span>
@@ -16,9 +33,9 @@ const AboutUs = () => {
             budovaní malých i veľkých fotovoltaických elektrární. 
           </p>
         </div>
-        <div className="aboutUs_img_crew_container">
+        <div className={`aboutUs_img_crew_container ${scroll ? 'aboutUs_animaiton' : ''}`} >
           <img className="aboutUs_img_crew" src={pic} alt={"los-muertos-crew"} />
-          <div className="aboutUs_img_shadow"></div>
+          <div className={`aboutUs_img_shadow ${scroll ? 'aboutUs_shadow_animation' : ''}`}></div>
         </div>
         <div className="aboutUs_paragraph_right" >
         <span className="abooutUs_highlight"></span>
@@ -33,8 +50,7 @@ const AboutUs = () => {
           </p>
         </div>
       </div>
-      <Footer/>
-    </>
+    
   );
 };
 

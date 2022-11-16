@@ -5,10 +5,10 @@
 
 .home-bg {
     height: 600px;
-    background-image:url('../../assets/home-bg.jpg');
+    background-image:url('../../assets/istockphoto-1411609195-1024x1024.jpg');
     width: 100%;
-    background-size: cover;
-    background-position-y:-400px ;
+    background-size:cover;
+    background-position-y:-200px;
 }
 
 @media(max-width:1536px) {
@@ -19,7 +19,7 @@
 
 @media(max-width:1200px) {
     .home-container {
-        margin-top: -34px;
+        margin-top: -83px;
     }
     .home-bg {
         background-position-y: unset;

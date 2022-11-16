@@ -12,7 +12,7 @@
 
 .single_realization_container {
     display: flex;
-    justify-content: space-between;
+    column-gap: 7rem;
 }
 
 .realization_paragraph {
@@ -47,7 +47,7 @@
 
 
 
-.realization_paragraph_before::before {
+/* .realization_paragraph_before::before {
     filter: brightness(90%);
     top: 460px;
     right: 10px;
@@ -73,7 +73,7 @@
     background-size: cover;
     z-index: 0;
     transform: scaleX(-1);
-}
+} */
 
 
 
@@ -115,12 +115,8 @@
     .single_realization_container {
         flex-direction: column;
         row-gap: 2rem;
-        margin-top:3rem !important ;
-       
     }
-    .single_realization_container:nth-of-type(0) {
-        margin-top:1rem !important ;
-    }
+  
     .realization {
         width: unset;
         height: 1000px;

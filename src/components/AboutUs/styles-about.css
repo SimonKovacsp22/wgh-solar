@@ -1,16 +1,17 @@
 .aboutUs_container {
+    margin-top: 5rem;
     justify-content: center;
     column-gap: 5.5rem;
     display: flex;
     position: relative;
     z-index: 1;
-    height: 812px;
     max-width: 1350px;
     margin-inline: auto;
+    margin-bottom: 4rem;
 }
 
 .aboutUs_paragraph_right {
-    margin-bottom: 190px;
+    margin-top: 190px;
     margin-left: 2rem;
     align-self: flex-end;
 }
@@ -24,6 +25,7 @@
     line-height:1.56em;
     font-size: 18px;
     font-weight: 300;
+    margin-bottom: 0;
 }
 
 .aboutUs_paragraph_right h3,.aboutUs_paragraph_left h3 {
@@ -46,10 +48,21 @@
     width: 400px;
   position: relative;
   transform: translateY(20px) translateX(10px);
-  animation: image-move;
-  animation-fill-mode: forwards;
-  animation-duration: 1s;
-  animation-delay: .5s;
+ 
+}
+
+.aboutUs_animaiton {
+    animation: image-move;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-delay: .5s;
+}
+
+.aboutUs_shadow_animation {
+    animation-name: shadow-growth;
+    animation-duration: 1s;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
 }
 
 .aboutUs_img_shadow {
@@ -63,10 +76,7 @@
     height: 100%;
     width: 100%;
     z-index: -1;
-    animation-name: shadow-growth;
-    animation-duration: 1s;
-    animation-delay: .5s;
-    animation-fill-mode: forwards;
+   
 
 }
 
@@ -76,7 +86,7 @@
     margin-bottom: 24px;
     height: 4px;
     width: 44px;
-    background: linear-gradient(90deg, rgb(53, 117, 68), rgb(72, 193, 249));
+    background: linear-gradient(90deg, #04455A, rgb(72 184 249));
 }
 
 @keyframes shadow-growth {
@@ -93,7 +103,7 @@
     }
  } 
 
- @media(max-width:1536px) {
+ /* @media(max-width:1536px) {
     .aboutUs_container {
         margin-inline: 100px;
     }
@@ -103,11 +113,11 @@
     .aboutUs_container {
         margin-inline: 50px;
     }
- }
+ } */
 
  @media(max-width:1200px) {
     .aboutUs_container {
-        margin-inline: 50px;
+        
         flex-direction: column;
         justify-content: flex-start;
         height: unset;

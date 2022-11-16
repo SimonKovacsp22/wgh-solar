@@ -71,7 +71,7 @@
 }
 
 .testimonial_person_occ {
-    color: #40baca;
+    color: var(--wgh-color);
     margin: 0;
     margin-left: 1rem;
 }

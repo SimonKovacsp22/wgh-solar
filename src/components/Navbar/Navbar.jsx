@@ -37,9 +37,6 @@ const Navbar = () => {
           <NavLink to="/domov">
             <button>Domov</button>
           </NavLink>
-          <NavLink to="/onas">
-            <button>O Nás</button>
-          </NavLink>
           <NavLink to="/sluzby">
             <button>Služby</button>
           </NavLink>
@@ -51,7 +48,7 @@ const Navbar = () => {
           </NavLink>
         </div>
         <div className="navbar_contact_info">
-          <button className="call_to_action_button"><PhoneInTalkIcon sx={{mr:'.5rem'}}/>+421 902 956 896</button>
+          <button className="call_to_action_button"><PhoneInTalkIcon sx={{mr:'.5rem',height:`${isLg ? '1em' : '1.2em'}`,width:`${isLg ? '1em' : '1.2em'}`}}/>+421 902 956 896</button>
         </div>
       
       </div>

@@ -70,7 +70,7 @@ const Contact = () => {
               </div>
               <div>
                 <h5>Adresa</h5>
-                <p style={{ color: "#999" }}>Vyhorlatská 664/2, 949 01 Nitra</p>
+                <p style={{ color: "#404046" }}>Vyhorlatská 664/2, 949 01 Nitra</p>
               </div>
             </div>
             <div className="contact_left_icon_info">
@@ -127,7 +127,7 @@ const Contact = () => {
               <input
               ref={emailRef}
                 style={{ width: "100%" }}
-                type="text"
+                type="email"
                 placeholder="pr. martin15@email.com"
               />
             </div>
@@ -136,7 +136,7 @@ const Contact = () => {
               <input
               ref={phoneNRef}
                 style={{ width: "100%" }}
-                type="text"
+                type="tel"
                 placeholder="+421 000 000 000"
               />
             </div>

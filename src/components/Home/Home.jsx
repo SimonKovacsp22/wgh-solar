@@ -1,6 +1,6 @@
 import React from 'react'
 import Footer from '../Footer/Footer'
-import { Testimonials }from '../index'
+import { Testimonials,AboutUs }from '../index'
 import './styles-home.css'
 
 const Home = () => {
@@ -9,7 +9,7 @@ const Home = () => {
       <div className='home-bg'>
 
       </div>
-      <Testimonials/>
+      <AboutUs/>
       <Footer/>
     </div>
   )

@@ -13,7 +13,7 @@ const Loader = ({setNavVis}) => {
   return (
    <div className='loader_container'>
         <div className="sk-grid" >
-        <div className="sk-grid-cube" style={{backgroundColor:'#F7AE17'}}></div>
+        <div className="sk-grid-cube" style={{backgroundColor:'#FE8C14'}}></div>
         <div className="sk-grid-cube"></div>
         <div className="sk-grid-cube"></div>
         <div className="sk-grid-cube"></div>

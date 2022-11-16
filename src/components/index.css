@@ -1,14 +1,15 @@
 * {
-  font-family: 'Prompt','Roboto',sans-serif;
+  font-family: 'Maven Pro','Roboto',sans-serif;
   box-sizing: border-box;
+  margin: 0;
 }
 
 :root {
-  --wgh-color:#3ca7b5;
-  --wgh-orange:#F7AE17;
+  --wgh-color:#07799e;
+  --wgh-orange:#FE8C14;
 }
 .root {
-  padding-top: 105px;
+  padding-top: 155px;
   background-color: #F7F9F9;
 }
 
@@ -24,7 +25,18 @@
   margin-right: 3rem;
   
 }
-
+.ml-7 {
+  margin-left: 7rem;
+}
 .mt-10 {
   margin-top: 10rem;
 }
+.mt-4{
+  margin-top: 4rem;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+

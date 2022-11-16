@@ -12,30 +12,18 @@
 }
 .navbar_logo_container {
     width: 235px;
-    height: 75px;
+    height: 125px;
     font-family: 'Roboto Condensed', sans-serif;
-    background-image: url('../../assets/WGHSolarLogo.png');
+    background-image: url('../../assets/wgh-logo2.png');
     font-size: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-size: 500px;
-    background-position-x: -124px;
-    background-position-y:  225px ;
+    background-position-x: -133px;
+    background-position-y:  273px ;
 
-}
-
-.navbar_logo_container h3 {
-    margin: 0
-}
-.navbar_logo_container p {
-    margin: 0;
-    font-family: 'Roboto';
-    font-weight: 500;
-    font-size: 1.5rem;
-    margin-top: -10px;
-    margin-left: 56px;
 }
 
 
@@ -49,7 +37,7 @@
 .navbar_buttons_container button {
     position: relative;
     background-color: transparent;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: #404046;
     border: none;
     padding-top: 10px;
@@ -113,7 +101,7 @@
 }
 
 .call_to_action_button {
-    font-size: 16px;
+    font-size: 20px;
     color: #404046;
     background-color: var(--wgh-orange);
     align-self: center;
@@ -126,6 +114,7 @@
     transition: background-color 250ms ease-out;
     display: flex;
     align-items: center;
+    padding-block: .3rem;
 
 }
 
@@ -159,6 +148,13 @@
 @media(max-width:1200px) {
     .navbar_content {
         padding-block: .7rem;
+    }
+    .navbar_buttons_container button{
+        font-size: 1.2rem;
+    }
+    .call_to_action_button {
+        font-size: 16px;
+        padding-block: 0;
     }
 }
 
