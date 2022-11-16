@@ -12,9 +12,6 @@ const Drawer = ({drawerOpen, isSm}) => {
           <NavLink to="/domov">
             <button>Domov</button>
           </NavLink>
-          <NavLink to="/onas">
-            <button>O Nás</button>
-          </NavLink>
           <NavLink to="/sluzby">
             <button>Služby</button>
           </NavLink>
