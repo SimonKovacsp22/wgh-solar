@@ -9,7 +9,7 @@
   --wgh-orange:#FE8C14;
 }
 .root {
-  padding-top: 155px;
+  padding-top: 125px;
   background-color: #F7F9F9;
 }
 
@@ -37,6 +37,12 @@
 
 .justify-end {
   justify-content: flex-end;
+}
+
+@media(max-width:1200px) {
+  .root {
+    padding-top: 91px;
+  }
 }
 
 

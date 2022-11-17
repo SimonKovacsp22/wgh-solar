@@ -24,6 +24,7 @@ const AboutUs = () => {
   return (
     
       <div className="aboutUs_container">
+        <div className="aboutUs_logo"></div>
         <div className="aboutUs_paragraph_left">
           <span className="abooutUs_highlight"></span>
           <h3>Fotovoltaika</h3>

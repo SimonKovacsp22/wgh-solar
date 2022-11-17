@@ -11,18 +11,17 @@
 
 }
 .navbar_logo_container {
-    width: 235px;
-    height: 125px;
+    width: 215px;
+    height: 105px;
     font-family: 'Roboto Condensed', sans-serif;
-    background-image: url('../../assets/wgh-logo2.png');
+    background-image: url('../../assets/original-logos_2022_Nov_7188-637603080be6d.png');
     font-size: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-size: 500px;
-    background-position-x: -133px;
-    background-position-y:  273px ;
+    background-size: cover;
+    background-position-y: 2px;
 
 }
 
@@ -40,14 +39,15 @@
     font-size: 1.4rem;
     color: #404046;
     border: none;
-    padding-top: 10px;
-    padding-bottom: 16px;
+    padding-top: 32px;
+    padding-bottom: 10px;
 }
 .navbar_contact_info {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     justify-content: center;
+    margin-top: 1rem;
 }
 .navbar_contact_info p {
    margin: 0;
@@ -156,6 +156,13 @@
         font-size: 16px;
         padding-block: 0;
     }
+    .navbar_buttons_container button {
+        padding-top: 16px;
+        padding-bottom: 10px;
+    }
+    .navbar_contact_info {
+        margin-top: 0;
+    }
 }
 
 
@@ -168,6 +175,11 @@
         bottom: 0;
         height: 3px;
     }
+    .navbar_buttons_container button {
+        padding-top: 12px;
+        padding-bottom: 16px;
+    }
+    
 
     
 }

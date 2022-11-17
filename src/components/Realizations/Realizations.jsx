@@ -22,7 +22,7 @@ const Realizations = () => {
             </h5>
           </div>
         </div>
-        <div className={`single_realization_container reverse mt-4 ${isLg ? '' : 'ml-7'}`}>
+        <div className={`single_realization_container reverse mt-4`}>
           <div className="realization_paragraph ">
             <h1>Horná Dolná</h1>
             <p>
@@ -49,7 +49,7 @@ const Realizations = () => {
           </div>
         </div>
   
-        <div className="single_realization_container reverse mt-4 ${isLg ? '' :'ml-7'}">
+        <div className="single_realization_container reverse mt-4 ">
           <div className="realization_paragraph  realization_paragraph_before_2">
             <h1>Horná Dolná</h1>
             <p>
