@@ -10,13 +10,34 @@
     margin-inline: auto;
     margin-bottom: 4rem;
 }
+.aboutUs_container::after {
+	content: "🡣"; /* Here you can change the style of the arrow */
+	position: absolute;
+    color: var(--wgh-color);
+	width: 35px; height: 35px;
+	margin: 0 auto;
+	right: 300px;
+    top: -50px;
+	font-size: 35px;
+    z-index: 1000;
+	animation: bounce 1s alternate infinite ease-in;
+}
+
+    @keyframes bounce {
+		0% {
+			transform: translateY(50%);
+		}
+		100% {
+			transform: translateY(-50%);
+		}
+	}
 
 .aboutUs_logo {
     display: none;
     position: absolute;
     height: 105px;
     width:215px;
-    background-image: url('../../assets/wgh-logo-transparentbg.png');
+    background-image: url('../../assets/wgh-short-logo-fococlipping-HD.png');
     background-size: cover;
     right: 0;
     top: -50px;
@@ -159,6 +180,12 @@
  @media(max-width:900px) {
     .aboutUs_logo {
 
+    }
+ }
+
+ @media (max-width:768px) {
+    .aboutUs_container::after {
+        display: none;
     }
  }
 

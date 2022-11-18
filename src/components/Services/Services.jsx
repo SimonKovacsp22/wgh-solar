@@ -28,7 +28,7 @@ const Services = () => {
                 ></div>
                 <div className="service_card_paragraph">
                   <h5>{sluzba.meno}</h5>
-                  <p>{sluzba.popis}</p>
+                  <p></p>
                 </div>
               </div>
             </Grid>

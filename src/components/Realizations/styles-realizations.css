@@ -25,6 +25,7 @@
 }
 
 .realization_paragraph h1 {
+    opacity: 0;
     z-index: 1;
     font-size: 4rem;
     margin-bottom: 2rem;
@@ -34,7 +35,8 @@
 .realization_paragraph p {
     z-index: 1;
     color: #6e6e6e;
-    font-size: 1.5rem;
+    color: #404046;
+    font-size: 1.8rem;
 }
 
 .realization_paragraph h5 {

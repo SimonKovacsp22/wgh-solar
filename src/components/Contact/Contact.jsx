@@ -63,18 +63,18 @@ const Contact = () => {
     <>
       <div className="contact_container">
         <div className="contact_left_section">
-          <div style={{position:'absolute'}}>
+          <div className="contact_left_info_container">
             <div className="contact_left_icon_info">
               <div>
-                <LocationOnOutlinedIcon sx={{width:'1.5rem',height:'1.5rem',color:'white'}}/>
+                <LocationOnOutlinedIcon sx={{width:'1.8rem',height:'2.5rem',color:'white'}}/>
               </div>
               <div>
                 <h5>Adresa</h5>
-                <p style={{ color: "#404046" }}>Vyhorlatská 664/2, 949 01 Nitra</p>
+                <p >Vyhorlatská 664/2, 949 01 Nitra</p>
               </div>
             </div>
             <div className="contact_left_icon_info">
-              <CallOutlinedIcon sx={{width:'1.5rem',height:'1.5rem',color:'white'}}/>
+              <CallOutlinedIcon sx={{width:'1.8rem',height:'2.5rem',color:'white'}}/>
               <div>
                 <h5>Kontakt</h5>
                 <p className="contact_info_colored">+421 910 389 351</p>
@@ -82,7 +82,7 @@ const Contact = () => {
               </div>
             </div>
             <div className="contact_left_icon_info">
-              <EmailOutlinedIcon sx={{width:'1.5rem',height:'1.5rem',color:'white'}}/>
+              <EmailOutlinedIcon sx={{width:'1.8rem',height:'2.5rem',color:'white'}}/>
               <div>
                 <h5>Mail</h5>
                 <p className="contact_info_colored">fvenergiamd@gmail.com</p>

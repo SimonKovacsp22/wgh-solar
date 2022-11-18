@@ -13,6 +13,8 @@
 
 
 
+
+
 @media(max-width:1536px) {
     .home-bg {
         background-position-y: -200px
@@ -41,3 +43,5 @@
         background-position-y: unset;
     }
 }
+
+

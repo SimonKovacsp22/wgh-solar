@@ -10,4 +10,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
+}
+
+.sk-grid {
+    transform: translateY(-50%)
 }
