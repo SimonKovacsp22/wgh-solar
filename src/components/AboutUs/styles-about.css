@@ -4,19 +4,22 @@
     justify-content: center;
     column-gap: 5.5rem;
     display: flex;
-    position: relative;
     z-index: 1;
     max-width: 1350px;
     margin-inline: auto;
     margin-bottom: 4rem;
 }
-.aboutUs_container::after {
+
+.aboutUs_arrow {
+    position: absolute;
+    right: 250px;
+}
+.aboutUs_arrow::after{
 	content: "🡣"; /* Here you can change the style of the arrow */
 	position: absolute;
     color: var(--wgh-color);
 	width: 35px; height: 35px;
 	margin: 0 auto;
-	right: 300px;
     top: -50px;
 	font-size: 35px;
     z-index: 1000;
@@ -184,7 +187,7 @@
  }
 
  @media (max-width:768px) {
-    .aboutUs_container::after {
+    .aboutUs_arrow{
         display: none;
     }
  }

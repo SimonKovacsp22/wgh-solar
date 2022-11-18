@@ -24,7 +24,7 @@ const AboutUs = () => {
   return (
     
       <div className="aboutUs_container">
-        
+        {!scroll && <div className="aboutUs_arrow"/>}
         <div className="aboutUs_logo"></div>
         <div className="aboutUs_paragraph_left">
           <span className="abooutUs_highlight"></span>
