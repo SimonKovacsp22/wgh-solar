@@ -11,8 +11,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-size: 700px;
-    background-image: url('../../assets/pexels-jonas-ferlin-3025562.jpg');
+    background-size:cover;
+    background-image: url('../../assets/pexels-quang-nguyen-vinh-6876534.jpg');
+    filter: sepia(50%);
+    background-position-x:right ;
+    background-position-y:top ;
     
 }
 
@@ -43,7 +46,7 @@
     margin-bottom: 1rem;
     font-size: 2.2rem;
     font-weight: 400;
-    text-shadow: 1px 1px 10px rgba(0,0,0,1);
+    /* text-shadow: 1px 1px 3px rgb(0 0 0); */
 }
 
 .contact_left_icon_info p {
@@ -176,6 +179,9 @@
         background-size: cover;
         
     }
+    .contact_left_icon_info {
+        margin-bottom: 1.5rem;
+    }
 }
 
 @media(max-width:600px) {
@@ -194,6 +200,9 @@
         font-size: 1.3rem;
 
     }
+    .contact_left_icon_info {
+        column-gap: .5rem;
+    }
 }
 
 @media(max-width:450px) {
@@ -207,10 +216,7 @@
     margin-bottom: 2rem;
    }
    
-   .contact_left_icon_info {
-    flex-direction: column;
-    row-gap: 1rem;
-   }
+   
    
 }
 
@@ -229,5 +235,6 @@
         font-size: 1.1rem;
 
     }
+   
     
  }

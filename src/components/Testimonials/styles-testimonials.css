@@ -21,14 +21,14 @@
     background-color: white;
     display: none;
     opacity: 0;
-    padding: 1rem 2rem;
+    padding:  2rem;
 }
 
 .testimonial_active {
-    animation: fade-in 5s forwards, shadow 3s 1s forwards;
-    display: block;
-    
+    animation: fade-in 5s forwards, shadow 3s 1s forwards, transform 3s 1s forwards;
+    display: block; 
 }
+
 
 @keyframes fade-in {
     from {opacity: 0;}
@@ -52,6 +52,7 @@
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 5;
     overflow: hidden;
+    margin-bottom: 1rem;
 }
 
 .testimonial_person {

@@ -1,0 +1,76 @@
+.realPrew_container {
+    max-width: 1350px;
+    margin-inline:auto;
+    position: relative;
+}
+
+.realPrew_container h3  {
+    font-family: 'Noto Serif', serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    color: #404046;
+}
+
+.realPrew_container img {
+    border-radius: 5px;
+    width: 100%;
+}
+.realPrew_content {
+    position: relative;
+}
+.realPrew_content h1 {
+    font-weight: 500;
+    font-size: 3rem;
+    color: #363030;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+.realPrew_container .arrow_container {
+    font-size: 3rem;
+    position: absolute;
+    right: 50px;
+    bottom: 10px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color:#363030 ;
+}
+
+.arrow_container span {
+    font-family: 'Roboto';
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+.arrow_container:hover .arrow{
+    cursor: pointer;
+    transform: scale(1.25);
+    transition: transform .2s ease-in;
+}
+
+@media(max-width:1536px) {
+    .realPrew_container {
+        margin-inline: 100px;
+    }
+ }
+
+ @media(max-width:1300px) {
+    .realPrew_container {
+        margin-inline: 50px;
+    }
+ }
+ @media(max-width:700px) {
+    .realPrew_container .arrow_container {
+        bottom: -40px;
+        right: 15px;
+    }
+}
+ @media(max-width:450px) {
+        .realPrew_container {
+            margin-inline: 1rem;
+        }
+    }
