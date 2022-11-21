@@ -59,7 +59,7 @@ const Footer = () => {
               />
               <div>
               <h5 >Mail</h5>
-              <p className="footer_info_colored">fvenergiamd@gmail.com</p>
+              <p className="footer_info_colored">obchod@wghsolar.sk</p>
             </div>
           </div>
         </div>

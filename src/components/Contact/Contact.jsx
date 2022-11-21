@@ -85,7 +85,7 @@ const Contact = () => {
               <EmailOutlinedIcon sx={{width:'1.8rem',height:'2.5rem',color:'white'}}/>
               <div>
                 <h5>Mail</h5>
-                <p className="contact_info_colored">fvenergiamd@gmail.com</p>
+                <p className="contact_info_colored">obchod@wghsolar.sk</p>
               </div>
             </div>
           </div>
