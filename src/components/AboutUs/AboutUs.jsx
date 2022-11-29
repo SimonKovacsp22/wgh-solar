@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import pic from "../../assets/pexels-los-muertos-crew-8853507.jpg";
 import "./styles-about.css";
-import {Footer} from '../index'
 
 
 

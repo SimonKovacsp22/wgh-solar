@@ -9,6 +9,7 @@
     font-size: 3.5rem;
     font-weight: 700;
     margin-top: 5rem;
+    margin-inline: 6rem;
     margin-bottom: 3rem;
     color: #404046;
 }
@@ -61,6 +62,16 @@
  @media(max-width:1300px) {
     .realPrew_container {
         margin-inline: 50px;
+    }
+    .realPrew_container h3 {
+        margin-inline: 3rem;
+    }
+ }
+
+ @media(max-width:1200px) {
+    .realPrew_container h3 {
+        margin-inline: 2rem;
+        margin-top: 2rem;
     }
  }
  @media(max-width:700px) {

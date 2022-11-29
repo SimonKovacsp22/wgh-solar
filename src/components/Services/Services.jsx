@@ -1,12 +1,19 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { Mini } from "../Loader/Loader";
 import Grid from "@mui/material/Grid";
 import "./styles-services.css";
 import { sluzby } from ".";
-import Footer  from '../Footer/Footer'
 
 const Services = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => setIsLoading(false), 1000);
+  }, []);
   return (
-   <>
+    <>
+      {isLoading && <Mini />}
+
       <div className="services_container">
         <Grid container spacing={2}>
           {sluzby.map((sluzba, i) => (
@@ -23,7 +30,7 @@ const Services = () => {
                 <div
                   className="service_card_image"
                   style={{
-                    backgroundImage: `url(${sluzba.img})`
+                    backgroundImage: `url(${sluzba.img})`,
                   }}
                 ></div>
                 <div className="service_card_paragraph">
@@ -34,10 +41,8 @@ const Services = () => {
             </Grid>
           ))}
         </Grid>
-        
       </div>
-      <Footer/>
-   </>
+    </>
   );
 };
 

@@ -157,6 +157,7 @@
         flex-direction: column;
         justify-content: flex-start;
         height: unset;
+        margin-bottom: 3rem;
     }
 
     .aboutUs_paragraph_right {

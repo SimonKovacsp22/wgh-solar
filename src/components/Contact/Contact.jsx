@@ -1,11 +1,11 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import CallOutlinedIcon from "@mui/icons-material/CallOutlined";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import emailjs from "@emailjs/browser";
 import "./styles-contact.css";
 import { Alert, Snackbar, useMediaQuery } from "@mui/material";
-import { Footer } from "../index";
+import { Mini } from "../Loader/Loader";
 
 const Contact = () => {
   const nameRef = useRef();
@@ -16,6 +16,9 @@ const Contact = () => {
   const messageRef = useRef();
   const [success0pen, setSuccessOpen] = useState(false);
   const [dangerOpen, setDangerOpen] = useState(false);
+  const [isLoading, setIsLoading] = useState(true)
+
+ 
 
   const isXs = useMediaQuery("(max-width:300px)");
 
@@ -74,8 +77,13 @@ const Contact = () => {
     }
   };
 
+  useEffect(()=> {
+    setTimeout(()=> setIsLoading(false),1000)
+  },[])
+
   return (
     <>
+    {isLoading && <Mini/>}
       <div className="contact_container">
         <div className="contact_left_section">
           <div className="contact_left_info_container">
@@ -209,7 +217,7 @@ const Contact = () => {
           Prosím vyplň polia označené hviezdičkou
         </Alert>
       </Snackbar>
-      <Footer />
+      
     </>
   );
 };

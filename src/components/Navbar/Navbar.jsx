@@ -34,7 +34,7 @@ const Navbar = () => {
         <div className="navbar_logo_container" style={{display:`${isLg ? 'none' : 'block'}`}}>
         </div>
         <div className="navbar_buttons_container" style={{display:`${isSm? 'none' : 'flex'}`}}>
-          <NavLink to="/domov">
+          <NavLink to="/">
             <button>Domov</button>
           </NavLink>
           <NavLink to="/sluzby">
