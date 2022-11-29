@@ -19,16 +19,6 @@
 .contact_left_info_container {
   margin-top: 3rem;
 }
-/* .contact_left_section::before {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top:0;
-    left:0;
-    background: rgba(0,0,0,.8);
-} */
 .contact_left_icon_info {
    
     display: flex;

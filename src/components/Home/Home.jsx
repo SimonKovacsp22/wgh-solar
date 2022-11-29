@@ -1,19 +1,24 @@
-import React from 'react'
-import Footer from '../Footer/Footer'
-import { Testimonials,AboutUs }from '../index'
-import './styles-home.css'
+import React, { useEffect, useState } from "react";
+import { AboutUs, Loader } from "../index";
+import { Mini } from "../Loader/Loader";
+import "./styles-home.css";
 
 const Home = () => {
-  
-  return (
-    <div className='home-container'>
-      
-      <div className='home-bg'>
-      </div>
-      <AboutUs/>
-      <Footer/>
-    </div>
-  )
-}
+  const [isLoading, setIsLoading] = useState(true)
 
-export default Home
+  useEffect(()=> {
+    setTimeout(()=> setIsLoading(false),1000)
+  },[])
+  return (
+    <>
+      
+      <div className="home-container">
+      {isLoading && <Mini />}
+        <div className="home-bg"></div>
+        <AboutUs />
+      </div>
+    </>
+  );
+};
+
+export default Home;
