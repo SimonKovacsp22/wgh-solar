@@ -9,7 +9,7 @@ const Drawer = ({ drawerOpen, isSm }) => {
         drawerOpen && isSm ? "drawer_open" : "drawer_close"
       }`}
     >
-      <NavLink to="/domov">
+      <NavLink to="/">
         <button>Domov</button>
       </NavLink>
       <NavLink to="/sluzby">

@@ -22,12 +22,10 @@ export const Mini = () => {
 </div>)
 }
 
-const Loader = ({ setNavVis }) => {
+const Loader = () => {
   const navigate = useNavigate();
   useEffect(() => {
-    setNavVis(false);
     setTimeout(() => {
-      setNavVis(true);
       navigate("/domov");
     }, 2000);
   }, []);

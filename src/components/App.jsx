@@ -1,29 +1,18 @@
-import React, { useState } from "react";
+import React from "react";
 import { Route, Routes } from "react-router-dom";
 import "./index.css";
-import {
-  Navbar,
-  Home,
-  Services,
-  Realizations,
-  Contact,
-  Loader,
-  Footer,
-} from ".";
+import { Navbar, Home, Services, Realizations, Contact, Footer } from ".";
 
 const App = () => {
-  const [navVis, setNavVis] = useState(true);
   return (
     <div className="root">
-      {navVis ? <Navbar /> : null}
+      <Navbar />
       <main className="main">
         <Routes>
-          
-          <Route path="/"  element={<Home />} />
-          <Route  path="/sluzby" element={<Services />} />
-          <Route  path="/realizacie" element={<Realizations />} />
-          <Route  path="/kontakt" element={<Contact />} />
-          
+          <Route path="/" element={<Home />} />
+          <Route path="/sluzby" element={<Services />} />
+          <Route path="/realizacie" element={<Realizations />} />
+          <Route path="/kontakt" element={<Contact />} />
         </Routes>
         <Footer />
       </main>
