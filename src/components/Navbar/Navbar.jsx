@@ -51,7 +51,9 @@ const Navbar = () => {
           </NavLink>
         </div>
         <div className="navbar_contact_info">
-          <button className="call_to_action_button">
+          <a
+            href="tel:+421920956896"
+           className="call_to_action_button">
             <PhoneInTalkIcon
               sx={{
                 mr: ".5rem",
@@ -60,7 +62,7 @@ const Navbar = () => {
               }}
             />
             +421 902 956 896
-          </button>
+          </a>
         </div>
       </div>
       <Drawer drawerOpen={drawerOpen} isSm={isSm} />
