@@ -82,20 +82,20 @@
 
 
 .bg1 {
-    background-image: url('../../assets//1.jpg');
+    background-image: url('https://res.cloudinary.com/kalgaro/image/upload/v1677327774/WGH/1_kivupm.jpg');
 }
 
 .bg2 {
-    background-image: url('../../assets//23.jpg');
+    background-image: url('https://res.cloudinary.com/kalgaro/image/upload/v1677327787/WGH/23_bbk43p.jpg');
 }
 
 .bg4 {
-    background-image: url('../../assets//17.jpg');
+    background-image: url('https://res.cloudinary.com/kalgaro/image/upload/v1677327791/WGH/17_xhed4e.jpg');
     transform: scaleX(-1);
 }
 
 .bg3 {
-    background-image: url('../../assets//19.jpg');
+    background-image: url('https://res.cloudinary.com/kalgaro/image/upload/v1677327793/WGH/19_yjnd5e.jpg');
 }
 
 
